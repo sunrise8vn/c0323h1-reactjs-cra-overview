@@ -8,6 +8,7 @@ import PostList from './components/post/PostList';
 import StudetnDetail from './components/student/StudentDetail';
 
 import Layout from './components/layout';
+import ProductUpload from './components/ProductUpload';
 
 export const UserContext = createContext();
 
@@ -26,6 +27,7 @@ function App() {
               element={<StudetnDetail />}
             />
             <Route path="/post/list" element={<PostList />} />
+            <Route path="/products/create" element={<ProductUpload />} />
           </Route>
         </Routes>
       </UserContext.Provider>
